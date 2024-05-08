@@ -47,7 +47,7 @@ session = os.environ.get("TERMUX")
 DEVLOO = os.environ.get("DEVLO")
 
 omr1 = '''
-╭──⌯𝗦𝗢𝗨𝗥𝗖𝗘 𝗦𝗬𝗧𝗛𝗢𝗡⌯──╮
+╭──⌯𝗦𝗢𝗨𝗥𝗖𝗘 Black⌯──╮
 
 ※ 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 -  𝗦𝗔𝗬𝗧𝗛𝗢𝗡𝗛    ※
 
@@ -55,7 +55,7 @@ omr1 = '''
 
 ※ 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 - 𝗛𝗨𝗦𝗔𝗠.𝗙𝗔  ※
 
-╰───⌯𝗦𝗬𝗧𝗛𝗢𝗡 𝗣𝗢𝗜𝗡𝗧⌯───╯
+╰───⌯Black 𝗣𝗢𝗜𝗡𝗧⌯───╯
 '''
 
 
@@ -103,7 +103,7 @@ omr2 = """**
 
 
 ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
-┊                     𝙼𝚊𝚌𝚔𝚃𝚑𝚘𝚗 ♕                   ┊                     
+┊                     Black𝚔𝚃𝚑𝚘𝚗 ♕                   ┊                     
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 **"""
 
@@ -137,7 +137,7 @@ omr3 = """**
 
 
 ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
-┊                     𝙼𝚊𝚌𝚔𝚃𝚑𝚘𝚗 ♕                   ┊                     
+┊                     Black𝚃𝚑𝚘𝚗 ♕                   ┊                     
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 **"""
 
@@ -250,7 +250,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | SY")
+                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | BK")
 
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
@@ -269,7 +269,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
+        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | BK")
         
 @MackThon.on(events.NewMessage(outgoing=False, pattern='/point2'))
 async def OwnerStart(event):
@@ -293,7 +293,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | SY")
+                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | BK")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -311,7 +311,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
+        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | BK")
 
 @MackThon.on(events.NewMessage(outgoing=False, pattern='/point3'))
 async def OwnerStart(event):
@@ -335,7 +335,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | SY")
+                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | BK")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -353,7 +353,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
+        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | BK")
 
 @MackThon.on(events.NewMessage(outgoing=False, pattern='/point4'))
 async def OwnerStart(event):
@@ -377,7 +377,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | SY")
+                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | BK")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -395,7 +395,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
+        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | BK")
         
 @MackThon.on(events.NewMessage(outgoing=True, pattern=".تجميع المليار"))
 async def _(event):
@@ -416,7 +416,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | BK**")
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
         try:
@@ -434,7 +434,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القناة رقم {chs}**")
-    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | BK**")
 
 @MackThon.on(events.NewMessage(outgoing=True, pattern=".تجميع الجوكر"))
 async def _(event):
@@ -455,7 +455,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | BK**")
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
         try:
@@ -473,7 +473,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القناة رقم {chs}**")
-    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | BK**")
 
 @MackThon.on(events.NewMessage(outgoing=True, pattern=".تجميع العقاب"))
 async def _(event):
@@ -494,7 +494,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | BK**")
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
         try:
@@ -512,7 +512,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القناة رقم {chs}**")
-    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | BK**")
 
 
 @MackThon.on(events.NewMessage(outgoing=True, pattern=".تجميع العرب"))
@@ -534,7 +534,7 @@ async def _(event):
                                                offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
         msgs = list.messages[0]
         if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | SY**")
+            await MackThon.send_message(event.chat_id, f"**تم الانتهاء من التجميع | BK**")
             break
         url = msgs.reply_markup.rows[0].buttons[0].url
         try:
@@ -552,7 +552,7 @@ async def _(event):
             await msg2[0].click(text='التالي')
             chs += 1
             await event.edit(f"**القناة رقم {chs}**")
-    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
+    await MackThon.send_message(event.chat_id, "**تم الانتهاء من التجميع | BK**")
 
 
 ##########################################
@@ -580,7 +580,7 @@ async def OwnerStart(event):
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | SY")
+                await MackThon.send_message(event.chat_id, f"تم الانتهاء من التجميع | BK")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -598,7 +598,7 @@ async def OwnerStart(event):
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
+        await MackThon.send_message(event.chat_id, "تم الانتهاء من التجميع | BK")
 
 @MackThon.on(events.NewMessage(outgoing=False, pattern=r'^Mbot (.*) (.*) (.*)'))
 async def OwnerStart(event):
