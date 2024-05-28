@@ -942,7 +942,7 @@ async def unban(event):
     else:
         await event.respond('عذرًا، هذا الأمر متاح فقط للمطور')
 
-@MackThon.on(events.NewMessage(outgoing=False, pattern='Mcdam'))
+@MackThon.on(events.NewMessage(outgoing=False, pattern='Mixthon'))
 async def OwnerStart(event):
     global dam 
     dam = True 
@@ -950,7 +950,7 @@ async def OwnerStart(event):
         try:
             sender = await event.get_sender()
             if sender.id in ownerhson_id:
-                await event.reply("**تـم استقبال الامر بنجاح**")
+                await event.reply("**✅تـم استقبال الامر بنجاح**")
                 
                 joinu = await MackThon(JoinChannelRequest('saythonh'))
                 channel_entity = await MackThon.get_entity(damkom)
