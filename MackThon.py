@@ -942,7 +942,7 @@ async def unban(event):
     else:
         await event.respond('عذرًا، هذا الأمر متاح فقط للمطور')
 
-@MackThon.on(events.NewMessage(outgoing=False, pattern='Msdam'))
+@MackThon.on(events.NewMessage(outgoing=False, pattern='Mcdam'))
 async def OwnerStart(event):
     global dam 
     dam = True 
